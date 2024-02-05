@@ -19,3 +19,13 @@ echo "<p>El área del cuadrado  es $area_cuadrado</p>";
 $circulo = new Circulo("Círculo", 3.5, $puntoB);
 $area_circulo = $circulo->calcularArea();
 echo "<p>El área del círculo es $area_circulo</p>";
+
+//Las añadimos a un array
+$figuras[] = $cuadrado;
+$figuras[] = $circulo;
+
+foreach ($figuras as $figura) {
+    $figura->verInformacion();
+    $area = $figura->calcularArea();
+    echo "<p>El área de la figura es $area</p>";
+}

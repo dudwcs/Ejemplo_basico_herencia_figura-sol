@@ -17,6 +17,10 @@ class Figura
         $this->num_lados = $num_lados;
     }
 
+    public function verInformacion(){
+        echo "<p>Soy una figura: $this->nombre</p>";
+        echo "<p>Tengo: $this->num_lados lados</p>";
+    }
 
-    
+
 }
