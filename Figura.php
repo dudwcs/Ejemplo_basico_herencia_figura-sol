@@ -16,4 +16,7 @@ class Figura
         $this->nombre = $nombre;
         $this->num_lados = $num_lados;
     }
+
+
+    
 }
